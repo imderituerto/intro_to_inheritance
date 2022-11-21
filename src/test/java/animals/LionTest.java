@@ -11,7 +11,7 @@ public class LionTest {
 
     @BeforeEach
     public void setUp(){
-        lion = new Lion("Scar");
+        lion = new Lion("Scar", false);
     }
 
     @Test
@@ -20,5 +20,12 @@ public class LionTest {
         String actual = lion.makeNoise(); // Act -- call the method you want to test.
         assertEquals(expected, actual);
         // asserThat(actual).isEqualTo(expected)
+    }
+
+    @Test
+    public void canEat(){
+        String expected = "Mmm, that was tasty!";
+        String actual = lion.eat();
+        assertEquals(expected, actual);
     }
 }

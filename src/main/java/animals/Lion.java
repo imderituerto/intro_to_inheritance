@@ -6,9 +6,12 @@ import javax.xml.namespace.QName;
 
 public class Lion extends Animal{
 
-    public Lion(String name){
-        super(name);
-    }
+    private boolean canWaitToBeKing;
 
+    public Lion(String name, boolean canWaitToBeKing){
+        super(name);
+        this.canWaitToBeKing = canWaitToBeKing;
+
+    }
 
 }

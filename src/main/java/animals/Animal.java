@@ -27,6 +27,7 @@ public class Animal {
     }
 
     public String makeNoise(){
+        //return "Hello, my name is " + this.name + "."
         return String.format("Hello, my name is %s.", this.name);
     }
 

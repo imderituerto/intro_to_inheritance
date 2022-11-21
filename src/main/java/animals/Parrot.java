@@ -1,4 +1,8 @@
 package animals;
 
-public class Parrot {
+public class Parrot extends Bird{
+
+    public Parrot(String name, int numberOfEggs){
+        super(name, numberOfEggs);
+    }
 }

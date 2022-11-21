@@ -2,7 +2,7 @@ package animals;
 
 public abstract class Animal {
 
-    private String name;
+    protected String name;
     private boolean healthy;
 
     public Animal(String name) {

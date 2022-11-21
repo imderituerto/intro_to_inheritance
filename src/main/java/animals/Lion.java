@@ -5,6 +5,9 @@ import javax.xml.namespace.QName;
 // Takes over "type" property in animal class
 
 public class Lion extends Animal{
-    String name;
+
+    public Lion(String name){
+        super(name);
+    }
 
 }

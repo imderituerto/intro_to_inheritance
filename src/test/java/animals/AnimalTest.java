@@ -9,11 +9,6 @@ public class AnimalTest {
 
     private Animal lion;
 
-    @BeforeEach
-    public void setup(){
-        lion = new Animal("Simba");
-    }
-
     @Test
     public void canMakeNoise(){
         String expected = "Hello, my name is Simba.";

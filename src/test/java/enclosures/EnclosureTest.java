@@ -1,6 +1,7 @@
 package enclosures;
 
 import animals.Animal;
+import animals.Lion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +25,7 @@ public class EnclosureTest {
 
     @Test
     public void canAddAnimal(){
-        Animal animal = new Animal("Simba");
+        Animal animal = new Lion("Simba", false);
         enclosure.addAnimal(animal);
         int expected = 1;
         int actual = enclosure.countAnimals();
@@ -33,10 +34,10 @@ public class EnclosureTest {
 
     @Test
     public void canAddMultipleAnimals(){
-        Animal lion = new Animal("Simba");
-        Animal parrot = new Animal("Iago");
-        enclosure.addAnimal(lion);
-        enclosure.addAnimal(parrot);
+        Animal lion1 = new Lion("Simba", false);
+        Animal lion2 = new Lion("Koyu", false);
+        enclosure.addAnimal(lion1);
+        enclosure.addAnimal(lion2);
         int expected = 2;
         int actual = enclosure.countAnimals();
         assertEquals(expected, actual);

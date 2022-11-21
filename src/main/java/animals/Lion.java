@@ -11,7 +11,11 @@ public class Lion extends Animal{
     public Lion(String name, boolean canWaitToBeKing){
         super(name);
         this.canWaitToBeKing = canWaitToBeKing;
+    }
 
+    //OVERRIDING A SUPERCLASS METHOD
+    public String makeNoise(){
+    return "Roar";
     }
 
 }

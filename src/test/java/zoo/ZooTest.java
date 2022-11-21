@@ -1,6 +1,7 @@
 package zoo;
 
 import animals.Animal;
+import animals.Lion;
 import enclosures.Enclosure;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,8 +26,8 @@ public class ZooTest {
 
     @Test
     public void canAddAnimalToEnclosure(){
-        Animal animal = new Animal("Simba");
-        zoo.addAnimalToEnclosure(animal, enclosure1);
+        Lion animal = new Lion("Simba", false);
+        zoo.addAnimalToEnclosure(lion, enclosure1);
         int expected = 1;
         int actual = enclosure1.countAnimals();
         assertEquals(expected, actual);

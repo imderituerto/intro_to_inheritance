@@ -16,7 +16,7 @@ public class LionTest {
 
     @Test
     public void makeNoise(){
-        String expected = "Hello, my name is Scar."; //Arrange -- input the expected outcome.
+        String expected = "Roar"; //Arrange -- input the expected outcome.
         String actual = lion.makeNoise(); // Act -- call the method you want to test.
         assertEquals(expected, actual);
         // asserThat(actual).isEqualTo(expected)

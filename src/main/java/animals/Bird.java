@@ -9,4 +9,8 @@ public abstract class Bird extends Animal{
         this.numberOfEggs = numberOfEggs;
     }
 
+    public int getNumberOfEggs(){
+        return this.numberOfEggs;
+    }
+
 }

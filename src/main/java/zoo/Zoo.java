@@ -1,6 +1,7 @@
 package zoo;
 
 import animals.Animal;
+import animals.Bird;
 import enclosures.Enclosure;
 
 public class Zoo {
@@ -13,6 +14,15 @@ public class Zoo {
         this.reptileHouse = reptileHouse;
         this.birdCage = birdCage;
         this.mammalField = mammalField;
+    }
+
+    public int countBirdEggs(){
+        int totalEggs = 0;
+        for(Animal animal : this.birdCage.getAnimals()){
+            Bird bird = (Bird) animal;
+            totalEggs += bird.getNumberOfEggs();
+        }
+        return totalEggs;
     }
 
     public Enclosure getReptileHouse() {

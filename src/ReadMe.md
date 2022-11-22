@@ -1,5 +1,6 @@
-<h1>Inheritance</h1>
+<h1>Polymorphism</h1>
 
+<h2>I. Inheritance</h2>
 Inheritance:`extends`
 
 Inherit properties: `super()` // Invokes constructor of Superclass
@@ -35,3 +36,33 @@ Animal > Bird > Parrot, seagull
 --> Abstract class within the already Abstract class "Animal"
 
 - Access to property in Parent class within subclasses (e.g. this.name): "private" -> "protected"
+
+<h2>II. Polymorphism </h2>
+
+`Animal animal = new Lion()`
+
+`animal = new Parrot()`
+
+<h3>Key concepts</h4>
+
+**Casting:**
+
+`lion.(roar)`
+
+`Animal animal = new Lion()`
+
+`animal.roar()`
+
+    public int countBirdEggs(){
+        int totalEggs = 0;
+        for(Animal animal : this.birdCage.getAnimals()){
+            Bird bird = (Bird) animal;
+            totalEggs += bird.getNumberOfEggs();
+        }
+    }
+
+**Overloading:**
+
+**Abstract methods:**
+
+For methods that are consistently being overridden in child classes.
